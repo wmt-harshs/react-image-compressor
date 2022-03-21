@@ -60,7 +60,7 @@ jobs:
         NETLIFY_AUTH_TOKEN: ${{ secrets.MY_NETLIFY_AUTH_TOKEN }}
         build_command: "echo hello"
         install_command: "echo hello"
-        NETLIFY_SITE_ID: 2fdf79a0-e3dd-4f66-a186-3e6e02133cd9
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_DEPLOY_TO_PROD: true
 
     - name: deploy to gh-pages
